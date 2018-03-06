@@ -1,0 +1,16 @@
+{
+    "name": "inggo/unused-file-remover",
+    "description": "Remove unused files from HTML files",
+    "authors": [
+        {
+            "name": "Inggo Espinosa",
+            "email": "inggo.espinosa@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Inggo\\Utilities\\": "src/"
+        }
+    }
+}
