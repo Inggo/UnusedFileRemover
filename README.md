@@ -18,7 +18,7 @@ Since `--pattern` is provided, it will only delete files matching the pattern, i
 
 Since `--also-pattern` and `--also-replace` are provided, in addition to the files in `--imgdir`, it will also do a RegEx-replace for `--also-pattern` and `--also-replace`. In this case, it will replace `/public/img/` to `/static/img/` in the image paths found and will also delete existing images in these directories.
 
-Finally, the `--delete` and `--list-unmatched` flags will automatically delete the files and list out the unmatched files without prompting the user. If neither of this is provided, a command prompt will ask the user what he/she wants to do with the unused files found.
+Finally, the `--delete` and `--list-unmatched` flags will automatically delete the files and list out the unmatched files without prompting the user. If neither of these is provided, a command prompt will ask the user what he/she wants to do with the unused files found.
     
 ## Parameters
 
