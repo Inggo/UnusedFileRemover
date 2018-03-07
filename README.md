@@ -36,10 +36,13 @@ Finally, the `--delete` and `--list-unmatched` flags will automatically delete t
 
 * `delete` - Optional. If set, it will delete the matched files without asking for user confirmation / prompt.
 
-* `list-unmatched` - Optinal. If set, it will list unmatched files without asking for user confirmation / prompt.
+* `list-unmatched` - Optional. If set, it will list unmatched files without asking for user confirmation / prompt.
 
 If neither `delete` or `list-unmatched` flags are set, a user prompt will be shown to the user for additional options, including deleting of the matched files and listing of various files found.
 
 ### Dev Notes
 
 Please note that I just made this tool very fast to search for unused images in [my blog][1] that uses [Hugo][2] so that I can automate my deployment process. Most of the tools I found were GUI-based and did not account for my needs (e.g., deletion of additonal files matching a pattern and accounting for `<source>` tags). I am aware there is a lot of room for improvement, but I will probably not be able to update this as often. Feel free to fork or do a PR.
+
+[1]: https://eat.nyo.me/
+[2]: http://gohugo.io/
