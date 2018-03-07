@@ -9,12 +9,12 @@ class ComposerStaticInitf033ce823cf6ddf0444d1b2a0b123cf1
     public static $prefixLengthsPsr4 = array (
         'I' => 
         array (
-            'Inggo\\Utilities\\' => 16,
+            'Inggo\\' => 6,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
-        'Inggo\\Utilities\\' => 
+        'Inggo\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),

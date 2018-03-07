@@ -42,7 +42,7 @@ class FileLister
             }
             
             if ($mime = $this->matchMime($it->key())) {
-                $this->files[] = $it->key();
+                $this->files[] = realpath($it->key());
             }
 
             $it->next();

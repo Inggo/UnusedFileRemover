@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Inggo\\Utilities\\' => array($baseDir . '/src'),
+    'Inggo\\' => array($baseDir . '/src'),
 );
