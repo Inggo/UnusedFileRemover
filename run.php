@@ -41,17 +41,22 @@ $command = -1;
 
 if (isset($options["delete"]) || isset($options["list-unmatched"])) {
     if (isset($options["delete"])) {
-        (new Inggo\Utilities\ListDeleter($toDelete))->delete();
-        (new Inggo\Utilities\ListDeleter($alsoDelete))->delete();
+        echo "Deleting files...\n";
         if (count($toDelete)) {
+            (new Inggo\Utilities\ListDeleter($toDelete))->delete();
             echo count($toDelete) . " files deleted.\n";
         }
         if (count($alsoDelete)) {
+            (new Inggo\Utilities\ListDeleter($alsoDelete))->delete();
             echo count($alsoDelete) . " additional files deleted.\n";
         }
-    }
 
-    if (isset($optons["list-unmatched"])) {
+        if (count($toDelete) == 0 && count($alsoDelete) == 0) {
+            echo "No files to delete.\n";
+        }
+    }
+    if (isset($options["list-unmatched"])) {
+        echo "Listing unmatched...\n";
         (new Inggo\Utilities\ListPrinter($unmatched))->print();
         if (count($unmatched)) {
             echo count($unmatched) . " unused images that did not match your pattern.\n";
